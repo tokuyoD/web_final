@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>團體介紹</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- 頁首 -->
+  <header class="bg-white shadow-sm p-3 mb-4">
+    <div class="container">
+      <a href="../index.html" class="btn btn-secondary">返回首頁</a>
+    </div>
+  </header>
+
+  <!-- 內容將動態生成 -->
+  <main class="container text-center" id="content"></main>
+
+  <!-- JavaScript -->
+  <script src="../js/group-data.js"></script>
+  <script>
+    // 取得團體名稱 (從 URL 查詢參數中讀取，例如：?group=blackpink)
+    const urlParams = new URLSearchParams(window.location.search);
+    const groupKey = urlParams.get("group");
+
+    // 確保團體存在
+    const group = groupsData[groupKey];
+    if (group) {
+      // 動態生成 HTML 內容
+      const content = document.getElementById("content");
+      content.innerHTML = `
+        <h1 class="mb-4">${group.name}</h1>
+        <img src="${group.image}" class="img-fluid mb-4" alt="${group.name}">
+        <p class="lead">${group.description}</p>
+        <div class="card mx-auto" style="max-width: 400px;">
+          <div class="card-body">
+            <h5 class="card-title">成員名單</h5>
+            <ul class="list-group">
+              ${group.members.map(member => `<li class="list-group-item">${member}</li>`).join("")}
+            </ul>
+          </div>
+        </div>
+      `;
+    } else {
+      // 如果團體不存在，顯示錯誤訊息
+      document.getElementById("content").innerHTML = `
+        <h2 class="text-danger">找不到該團體！</h2>
+        <a href="../index.html" class="btn btn-primary mt-3">返回首頁</a>
+      `;
+    }
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
