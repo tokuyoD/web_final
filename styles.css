@@ -1,0 +1,51 @@
+/* 全局字體和背景樣式 */
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    background-color: #f8f9fa; /* 主背景色 */
+    color: #333; /* 全局文字顏色 */
+  }
+  
+  /* 標題樣式 */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* 按鈕樣式 */
+  .btn-primary {
+    font-size: 1.2rem; /* 字體大小 */
+    border-radius: 10px; /* 圓角 */
+    background: linear-gradient(to right, #6e508c, #713a71); /* 漸層背景 */
+    color: white;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+    transition: transform 0.2s, box-shadow 0.2s; /* 過渡效果 */
+    width: auto; /* 自動調整寬度 */
+    padding: 0.5rem 0.8rem; /* 縮短內邊距（改為更窄的水平邊距） */
+}
+  
+  .btn-primary:hover {
+    transform: scale(1.05); /* 懸停放大效果 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* 增強陰影效果 */
+  }
+  
+  /* 下拉選單樣式 */
+  .dropdown-menu {
+    font-size: 1rem; /* 字體大小 */
+    border-radius: 8px; /* 圓角 */
+    background-color: #ffffff; /* 背景顏色 */
+    border: 1px solid #dee2e6; /* 邊框顏色 */
+  }
+  
+  .dropdown-menu a {
+    color: #495057; /* 文字顏色 */
+    padding: 0.5rem 1rem; /* 內邊距 */
+  }
+  
+  .dropdown-menu a:hover {
+    color: #274d77; /* 懸停文字顏色 */
+    background-color: #f1f1f1; /* 懸停背景色 */
+    text-decoration: none; /* 移除下劃線 */
+  }
