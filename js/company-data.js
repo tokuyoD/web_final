@@ -1,7 +1,7 @@
 const companiesData = {
     sm: {
         name: "SM Entertainment",
-        image: "../assets/images/sm.jpg",
+        image: "https://pbs.twimg.com/media/GG3ONVoaUAAzxgk?format=jpg&name=4096x4096",
         description: "SM Entertainment 創立於1995年2月14日。公司最初重點是娛樂管理業務，現在業務領域不斷擴大，且成功打入國際市場。",
         groups: [
           { name: "EXO", link: "../groups/group.html?group=exo" },

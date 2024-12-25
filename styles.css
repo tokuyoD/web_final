@@ -17,7 +17,7 @@ body {
   .btn-primary {
     font-size: 1.2rem; /* 字體大小 */
     border-radius: 10px; /* 圓角 */
-    background: linear-gradient(to right, #6e508c, #713a71); /* 漸層背景 */
+    background: linear-gradient(to right, #1f1b22, #7b697b); /* 漸層背景 */
     color: white;
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 陰影效果 */

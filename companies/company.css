@@ -1,0 +1,28 @@
+
+  body {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    color: #343a40;
+  }
+
+  .list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+  }
+
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+
+  .btn-link {
+    text-decoration: none;
+    color: #79abe2;
+  }
+
+  .btn-link:hover {
+    text-decoration: underline;
+    color: #b3bbc4;
+  }

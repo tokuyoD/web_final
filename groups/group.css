@@ -1,0 +1,8 @@
+.member-img {
+    width: 100%; /* 使圖片寬度適應容器 */
+    aspect-ratio: 4 / 3; /* 設置 1:1 的比例 */
+    object-fit: cover; /* 裁剪圖片以適應容器 */
+    border-radius: 10px; /* 可選：添加圓角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 可選：添加陰影 */
+  }
+  

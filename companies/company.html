@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>公司介紹</title>
-  <!-- Bootstrap CSS -->
+  <!-- 引入 Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="company.css">
 </head>
 <body class="bg-light">
 
@@ -16,28 +17,49 @@
     </div>
   </header>
 
-  <!-- 動態內容 -->
+  <!-- 主內容區域 -->
   <main class="container text-center" id="content"></main>
 
-  <!-- JavaScript -->
+  <!-- JavaScript 引用 -->
   <script src="../js/company-data.js"></script>
   <script>
+    // 取得查詢參數
     const urlParams = new URLSearchParams(window.location.search);
     const companyKey = urlParams.get("company");
 
+    // 從資料中取得公司資訊
     const company = companiesData[companyKey];
+
     if (company) {
+      // 若找到公司，動態生成內容
       const content = document.getElementById("content");
       content.innerHTML = `
         <h1 class="mb-4">${company.name}</h1>
-        <img src="${company.image}" class="img-fluid mb-4" alt="${company.name}">
+        <img src="${company.image}" class="img-fluid mb-4 rounded shadow" alt="${company.name}">
         <p class="lead">${company.description}</p>
         <h3 class="mb-3">旗下團體</h3>
         <ul class="list-group">
-          ${company.groups.map(group => `<li class="list-group-item"><a href="${group.link}" class="btn btn-link">${group.name}</a></li>`).join("")}
-        </ul>
+         
+        <div class="row">
+    ${company.groups
+      .map(group => `
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm">
+            <img src="../assets/images/${group.name.toLowerCase()}.jpg" class="card-img-top" alt="${group.name}">
+            <div class="card-body">
+              <h5 class="card-title">${group.name}</h5>
+              <p class="card-text">探索更多有關 ${group.name} 的資訊！</p>
+              <a href="${group.link}" class="btn btn-primary">了解更多</a>
+            </div>
+          </div>
+        </div>
+      `)
+      .join("")}
+  </div>
+
       `;
     } else {
+      // 若公司不存在，顯示錯誤訊息
       document.getElementById("content").innerHTML = `
         <h2 class="text-danger">找不到該公司！</h2>
         <a href="../index.html" class="btn btn-primary mt-3">返回首頁</a>
@@ -45,7 +67,7 @@
     }
   </script>
 
-  <!-- Bootstrap JS -->
+  <!-- 引入 Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
