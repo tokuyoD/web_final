@@ -89,7 +89,7 @@ const groupsData = {
     
     straykids: {
       name: "Stray Kids",
-      image: "../assets/images/straykids.jpg",
+      image: "../assets/images/stray kids.jpg",
       description: "Stray Kids 是 JYP Entertainment 旗下男子團體，以獨立製作的音樂與強大的舞台實力著稱。",
       members: [
         {name: "方燦",image: "https://pbs.twimg.com/media/GfIKc-JaIAEYLI0?format=jpg&name=large", description: "方燦是 Stray Kids 的隊長與製作人，創作才華突出。"},   
@@ -182,7 +182,7 @@ const groupsData = {
     
     gidle: {
       name: "(G)I-DLE",
-      image: "../assets/images/gidle.jpg",
+      image: "../assets/images/(g)i-dle.jpg",
       description: "(G)I-DLE 是 CUBE Entertainment 旗下女子團體，以創作型女團著稱。",
       members: [
         { name: "薇娟", image: "https://pbs.twimg.com/media/GfkJsCUbYAAKp6b?format=jpg&name=small", description: "薇娟是主唱，以穩定的嗓音和優雅形象聞名。" },
