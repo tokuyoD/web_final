@@ -38,6 +38,7 @@
 <header class="bg-white shadow-sm p-3 mb-4">
   <div class="container">
     <a href="../index.html" class="btn btn-secondary">返回首頁</a>
+    <a id="backToCompanyBtn" href="#" class="btn btn-secondary">回公司</a>
   </div>
 </header>
 
@@ -110,6 +111,11 @@
         `;
         membersContainer.appendChild(memberSection);
       });
+      // 生成返回公司頁面的 URL
+      const backToCompanyBtn = document.getElementById("backToCompanyBtn");
+      const companyPageURL = `../companies/company.html?company=${group.company}`;
+      backToCompanyBtn.href = companyPageURL;
+
     } else {
       document.body.innerHTML = `
         <div class="container text-center">

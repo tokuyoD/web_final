@@ -2,6 +2,7 @@ const groupsData = {
   exo: {
       name: "EXO",
       image: "../assets/images/exo.jpg",
+      company: "sm",
       description: "EXO 是韓國 SM Entertainment 旗下著名男團，以強大的音樂和舞蹈實力著稱。",
       members: [
         {name: "Xiumin", image: "https://pbs.twimg.com/media/GW3bl3Ua8AcwjCF?format=jpg&name=4096x4096", description: "Xiumin 是 EXO 的主唱及舞者，他以甜美聲音及動感舞蹈聞名。"},
@@ -19,6 +20,7 @@ const groupsData = {
     nct127: {
       name: "NCT127",
       image: "../assets/images/nct127.jpg",
+      company: "sm",
       description: "NCT127 是韓國 SM Entertainment 的子團體，以多樣的音樂風格著稱。",
       members: [
         {name: "Johnny", image: "https://pbs.twimg.com/media/E_sCidiVEAEQCNT?format=jpg&name=large", description: "Johnny 是 NCT127 的主舞和副主唱，來自芝加哥。"},          
@@ -36,6 +38,7 @@ const groupsData = {
     aespa: {
       name: "aespa",
       image: "../assets/images/aespa.jpg",
+      company:"sm",
       description: "aespa 是韓國 SM Entertainment 旗下女子團體，以 AI 和現實結合的概念聞名。",
       members: [
         {name: "Karina", image: "https://pbs.twimg.com/media/GfkaIIEbUAA7uCS?format=jpg&name=large", description: "Karina 是 aespa 的隊長與主舞之一。"},
@@ -48,6 +51,7 @@ const groupsData = {
     blackpink: {
       name: "BLACKPINK",
       image: "../assets/images/blackpink.jpg",
+      company: "yg",
       description: "BLACKPINK 是 YG Entertainment 旗下著名女子團體，擁有多首熱門歌曲。",
       members: [
         {name: "Jisoo", image: "https://pbs.twimg.com/media/Gfn_qr0a4AAkxEU?format=jpg&name=medium", description: "Jisoo 是 BLACKPINK 的主唱與形象大使。"},
@@ -60,6 +64,7 @@ const groupsData = {
     twice: {
       name: "TWICE",
       image: "../assets/images/twice.jpg",
+      company: "jyp",
       description: "TWICE 是 JYP Entertainment 旗下著名女子團體，以活力和迷人的舞台表演著稱。",
       members: [
         {name: "Nayeon", image: "https://pbs.twimg.com/media/GfnIczaXkAAPsEG?format=jpg&name=small", description: "Nayeon 是 TWICE 的主唱與中心，充滿活力和親和力。"},
@@ -77,6 +82,7 @@ const groupsData = {
     itzy: {
       name: "ITZY",
       image: "../assets/images/itzy.jpg",
+      company: "jyp",
       description: "ITZY 是 JYP Entertainment 旗下女子團體，以強烈的概念和舞台表現著稱。",
       members: [
         {name: "禮志", image: "https://pbs.twimg.com/media/GfpWBW7W8AAxjjw?format=jpg&name=large", description: "禮志是 ITZY 的隊長與主舞，以強大的舞蹈實力聞名。"},
@@ -90,6 +96,7 @@ const groupsData = {
     straykids: {
       name: "Stray Kids",
       image: "../assets/images/stray kids.jpg",
+      company: "jyp",
       description: "Stray Kids 是 JYP Entertainment 旗下男子團體，以獨立製作的音樂與強大的舞台實力著稱。",
       members: [
         {name: "方燦",image: "https://pbs.twimg.com/media/GfIKc-JaIAEYLI0?format=jpg&name=large", description: "方燦是 Stray Kids 的隊長與製作人，創作才華突出。"},   
@@ -106,6 +113,7 @@ const groupsData = {
     bigbang: {
       name: "BIGBANG",
       image: "../assets/images/bigbang.jpg",
+      company: "yg",
       description: "BIGBANG 是 YG Entertainment 旗下著名男子團體，被稱為韓流之王。",
       members: [
         {name: "G-Dragon", image: "https://pbs.twimg.com/media/GfehtJJagAA2aci?format=jpg&name=large", description: "G-Dragon 是 BIGBANG 的隊長與靈魂人物，以創作才華與領導力聞名。"},
@@ -156,6 +164,7 @@ const groupsData = {
     newjeans: {
       name: "NewJeans",
       image: "../assets/images/newjeans.jpg",
+      company: "hybe",
       description: "NewJeans 是 HYBE 旗下女子團體，以青春活力和自然概念受到喜愛。",
       members: [
         { name: "Minji", image: "https://pbs.twimg.com/media/GQhe6mwbsAArwV6?format=jpg&name=large", description: "Minji 是隊長，以冷靜和大方的氣質聞名。" },
@@ -169,6 +178,7 @@ const groupsData = {
     ive: {
       name: "IVE",
       image: "../assets/images/ive.jpg",
+      company: "others",
       description: "IVE 是 Starship Entertainment 旗下女子團體，以高顏值和強實力迅速走紅。",
       members: [
         { name: "Gaeul", image: "https://pbs.twimg.com/media/Gfn-BruWsAA7tLY?format=jpg&name=small", description: "Gaeul 是 IVE 的副唱與主舞，以溫柔舞台表現著稱。" },
@@ -183,6 +193,7 @@ const groupsData = {
     gidle: {
       name: "(G)I-DLE",
       image: "../assets/images/(g)i-dle.jpg",
+      company: "others",
       description: "(G)I-DLE 是 CUBE Entertainment 旗下女子團體，以創作型女團著稱。",
       members: [
         { name: "薇娟", image: "https://pbs.twimg.com/media/GfkJsCUbYAAKp6b?format=jpg&name=small", description: "薇娟是主唱，以穩定的嗓音和優雅形象聞名。" },
@@ -196,6 +207,7 @@ const groupsData = {
     cnblue: {
       name: "CNBLUE",
       image: "../assets/images/cnblue.jpg",
+      company: "others",
       description: "CNBLUE 是 FNC Entertainment 旗下樂團，以搖滾風格和高音樂素養著稱。",
       members: [
         { name: "鄭容和", image: "https://pbs.twimg.com/media/GfDIta6a4AAeGUu?format=jpg&name=small", description: "鄭容和是主唱和吉他手，負責大部分歌曲創作。" },
