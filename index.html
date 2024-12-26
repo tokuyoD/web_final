@@ -6,6 +6,7 @@
   <title>韓國團體介紹</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="../js/carousel.js"></script>
 </head>
 <body class="bg-light">
 
@@ -108,120 +109,111 @@
     </div>
   </section>
 
-  <section class="text-center my-5">
+ 
+
+  <section class="carousel-wrapper text-center my-5" data-bs-interval="3000">
     <h2>快速看團</h2>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="14" aria-label="Slide 15"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="15" aria-label="Slide 16"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="16" aria-label="Slide 17"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="17" aria-label="Slide 18"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="18" aria-label="Slide 19"></button>
-      </div>
-    
-      <!-- The slideshow/carousel -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../assets/images/bts.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>BTS</h5>
-            <button onclick="location.href='../groups/group.html?group=bts'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/blackpink.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>BLACKPINK</h5>
-            <button onclick="location.href='../groups/group.html?group=blackpink'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/seventeen.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>SEVENTEEN</h5>
-            <button onclick="location.href='../groups/group.html?group=seventeen'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/exo.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>EXO</h5>
-            <button onclick="location.href='../groups/group.html?group=exo'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/nct127.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>NCT127</h5>
-            <button onclick="location.href='../groups/group.html?group=nct127'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/aespa.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>aespa</h5>
-            <button onclick="location.href='../groups/group.html?group=aespa'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/twice.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>TWICE</h5>
-            <button onclick="location.href='../groups/group.html?group=twice'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/itzy.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>ITZY</h5>
-            <button onclick="location.href='../groups/group.html?group=itzy'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/stray kids.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>Stray Kids</h5>
-            <button onclick="location.href='../groups/group.html?group=straykids'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/bigbang.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>BIGBANG</h5>
-            <button onclick="location.href='../groups/group.html?group=bigbang'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/newjeans.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>NewJeans</h5>
-            <button onclick="location.href='../groups/group.html?group=newjeans'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/ive.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>IVE</h5>
-            <button onclick="location.href='../groups/group.html?group=ive'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/(g)i-dle.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>(G)I-DLE</h5>
-            <button onclick="location.href='../groups/group.html?group=gidle'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-        <div class="carousel-item">
-          <img src="../assets/images/cnblue.jpg" class="d-block" style="width: 300px; height: 200px; margin: 0 auto;">
-            <h5>CNBLUE</h5>
-            <button onclick="location.href='../groups/group.html?group=cnblue'" class="btn btn-primary mt-3">了解更多</button>
-        </div>
-      </div>
-    
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <div id="groupCarousel" class="carousel slide custom-carousel" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-indicators" id="carousel-indicators"></div>
+      <div class="carousel-inner" id="carousel-items"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#groupCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#groupCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
   </section>
+  
+  <style>
+  /* 調整圖片大小和比例 */
+  .custom-carousel img {
+  width: 60%; 
+  aspect-ratio: 4 / 3; 
+  max-height: 600px; 
+  max-width:800px;
+  margin: 0 auto;
+  object-fit: cover; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
+}  
+  /* 中央標題樣式 */
+  .carousel-wrapper h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  /* 修改輪播控制按鈕顏色為黑色 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* 設置箭頭背景顏色為黑色 */
+  border-radius: 50%; /* 圓形背景 */
+}
 
+/* 調整控制按鈕顏色 */
+.carousel-control-prev,
+.carousel-control-next {
+  color: black; /* 按鈕文字顏色為黑色 */
+  width: 5%; /* 控制按鈕的寬度 */
+}
+  
+  /* 輪播按鈕的間距調整 */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* 控制按鈕的寬度 */
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  </style>
+  
+  <script src="../js/group-data.js"></script>
+  <script>
+    const indicatorsContainer = document.getElementById("carousel-indicators");
+    const itemsContainer = document.getElementById("carousel-items");
+  
+    // 從 group-data.js 取得所有團體資料
+    const groups = Object.values(groupsData);
+  
+    // 生成輪播項目
+    groups.forEach((group, index) => {
+      // 生成指示器
+      const indicator = document.createElement("button");
+      indicator.type = "button";
+      indicator.dataset.bsTarget = "#groupCarousel";
+      indicator.dataset.bsSlideTo = index;
+      indicator.className = index === 0 ? "active" : "";
+      indicator.setAttribute("aria-label", `Slide ${index + 1}`);
+      indicatorsContainer.appendChild(indicator);
+  
+      // 生成輪播內容
+      const item = document.createElement("div");
+      item.className = `carousel-item ${index === 0 ? "active" : ""}`;
+      item.innerHTML = `
+        <a href="../groups/group.html?group=${group.name.toLowerCase()}">
+          <img src="${group.image}" class="d-block w-100" alt="${group.name}">
+        </a>
+        <div class="carousel-caption d-none d-md-block">
+          <h5>${group.name}</h5>
+          <p>${group.description}</p>
+          
+        </div>
+      `;
+      itemsContainer.appendChild(item);
+    });
+  </script>
+  
+  
 </main>
 
 <footer class="bg-white text-center py-3 mt-5 shadow-sm">
-<p class="mb-0 text-muted">聯絡方式:s10350345@thu.edu.tw</p>
+<p class="mb-0 text-muted">聯絡方式:<br>s10350345@thu.edu.tw<br>s10350337@thu.edu.tw</p>
 </footer>
 
 
